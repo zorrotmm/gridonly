@@ -10,22 +10,22 @@ The column class format is size-numerator-denominator, example: .md-3-4
 Rows are created by the expected .row class, but every column requires the .col class to function correctly.
 
 Usage/Examples:
-
+```
 <div class="row">
   <div class="col"></div>
   <div class="col"></div>
   <div class="col"></div>
 </div>
-
+```
 The above code would create 3 rows with 100% width.
-
+```
 <div class="row">
   <div class="col sm-1-3 phone-1-2"></div>
   <div class="col sm-1-3 phone-1-2"></div>
   <div class="col sm-1-3 phone-1-1"></div>
 </div>
-
-This could create 3 columns until hitting the sm min-width, at at which point it would be 2 columns, with 1 below at 100% width.
+```
+This would create 3 columns down to the 'sm' min-width, at at which point it would be 2 columns, with 1 below at 100% width.
 
 Note: In the last column, .phone-1-1 is redundant (all column fractions that equal 1 are) and can be omitted.  The .col class has the same effect, and is required for a column to work correctly anyway.
 
